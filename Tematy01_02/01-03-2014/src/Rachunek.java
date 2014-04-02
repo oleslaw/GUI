@@ -21,6 +21,11 @@ public class Rachunek {
 		this.nrKonta = ++ileKont;
 	}
 	
+	public Rachunek(Osoba wlasciciel, int stanKonta){
+		this(wlasciciel);
+		this.stanKonta = stanKonta;
+	}
+	
 	public void setnazwaBanku(String nowaNazwa){
 		this.nazwaBanku = nowaNazwa;
 	}
